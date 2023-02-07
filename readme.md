@@ -39,8 +39,10 @@ Run the following command to install the necessary dependencies:
 
 `npm install`
 
-Once all dependencies have been installed, you can run the following command to execute the tests:
+Once all dependencies have been installed, if you want to see the result in the console you can run the following command to execute the tests:
 
-`npm test  `
+`npm run test`
 
-You should see the test results displayed in the terminal or command prompt.
+If you want to see the result in the HTML report, run the following command *(You must execute npm run test first)*: 
+
+`npm run report`
