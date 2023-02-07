@@ -1,4 +1,4 @@
-Feature: Get secondary title in eurostep
+Feature: Get primary title in eurostep
 
   Scenario: Title is in the page
     When I looking for the primary title
