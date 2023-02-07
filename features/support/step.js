@@ -1,9 +1,14 @@
+//Package to compare the expected result with the actual result
 const assert = require("assert");
-const { When, Then } = require("@cucumber/cucumber");
+// Call the Cucumber library to use the When, Then and setDefaultTimeout functions
+const { When, Then, setDefaultTimeout } = require("@cucumber/cucumber");
+//By default, Cucumber timeouts after 5 secondes. I have set it to 10 seconds.
+setDefaultTimeout(10000);
 
+// I import the ClassGetTitle from index.js
 const { ClassGetTitle } = require("../../index");
 
-When("I called the secondary title", async function () {
+When("I looking for the primary title", async function () {
   this.words = await new ClassGetTitle().getTitle();
 });
 
