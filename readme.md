@@ -37,7 +37,7 @@ This allows for the tests to be easily maintainable and understandable by the en
 `git clone https://github.com/kevinrss01/BDD-test-gherkin-JS-cucumber-selenium`
 
 4. Open the project in VS Code or your preferred code editor.  
-   Open the terminal and if you haven't installed cucumber.js yet, run the following command:
+   Open the VS code terminal and if you haven't installed cucumber.js yet, run the following command:
 
 `npm install -g cucumber`
 
