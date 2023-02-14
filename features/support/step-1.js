@@ -1,21 +1,19 @@
-//Package to compare the expected result with the actual result
-const assert = require("assert");
-// Call the Cucumber library to use the When, Then and setDefaultTimeout functions
 const { When, Then, setDefaultTimeout } = require("@cucumber/cucumber");
 //By default, Cucumber timeouts after 5 secondes. I have set it to 10 seconds.
-setDefaultTimeout(10000);
-const { ClassGetTitle } = require("../../index.js");
+setDefaultTimeout(60000);
 
-// If 'npm run test'
-// I run a test
-When("I looking for the primary title", async function () {
-  this.words = await new ClassGetTitle().getTitle();
-});
+const { ClassBDDtests } = require("../../index.js");
 
-Then("I should see {string}", function (expectedResponse) {
-  assert.equal(
-    this.words,
-    expectedResponse,
-    `The secondary title is not correct. \n Words found : ${this.words} \n Words expected : ${expectedResponse}`
-  );
-});
+if (process.env.npm_lifecycle_event === "test") {
+  When("I enter my login credentials and click on enter", async function () {
+    await new ClassBDDtests().fillLoginInput();
+  });
+
+  When("I am redirected to the ShareAspace home page", async function () {
+    await new ClassBDDtests().verifyHomePage();
+  });
+
+  Then("I should see {string}", async function () {
+    await new ClassBDDtests().verifyWelcomeMessage("Spaces");
+  });
+}

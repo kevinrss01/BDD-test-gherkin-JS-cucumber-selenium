@@ -4,36 +4,49 @@
     "elements": [
       {
         "description": "",
-        "id": "get-primary-title-in-eurostep;title-is-in-the-page",
+        "id": "login-in-shareaspace;successful-login",
         "keyword": "Scenario",
         "line": 3,
-        "name": "Title is in the page",
+        "name": "Successful login",
         "steps": [
           {
             "arguments": [],
             "keyword": "When ",
             "line": 4,
-            "name": "I looking for the primary title",
+            "name": "I enter my login credentials and click on enter",
             "match": {
-              "location": "features\\support\\step-1.js:11"
+              "location": "features\\support\\step-1.js:8"
             },
             "result": {
               "status": "passed",
-              "duration": 2783657299
+              "duration": 20821623899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 5,
+            "name": "I am redirected to the ShareAspace home page",
+            "match": {
+              "location": "features\\support\\step-1.js:12"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 444200,
+              "error_message": "TypeError: Cannot read properties of null (reading 'wait')\n    at ClassBDDtests.verifyHomePage (C:\\_DEV\\TESTS\\BDD-test-gherkin-JS-cucumber-selenium\\index.js:44:23)\n    at World.<anonymous> (C:\\_DEV\\TESTS\\BDD-test-gherkin-JS-cucumber-selenium\\features\\support\\step-1.js:13:31)"
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 5,
-            "name": "I should see \"Secure ollaboration for Product Lifecycle Management\"",
+            "line": 6,
+            "name": "I should see \"Spaces\"",
             "match": {
-              "location": "features\\support\\step-1.js:15"
+              "location": "features\\support\\step-1.js:16"
             },
             "result": {
-              "status": "failed",
-              "duration": 1236299,
-              "error_message": "AssertionError [ERR_ASSERTION]: The secondary title is not correct. \n Words found : Secure Collaboration for Product Lifecycle Management \n Words expected : Secure ollaboration for Product Lifecycle Management\n    + expected - actual\n\n    -Secure Collaboration for Product Lifecycle Management\n    +Secure ollaboration for Product Lifecycle Management\n\n    at World.<anonymous> (C:\\_DEV\\TESTS\\BDD-test-gherkin-JS-cucumber-selenium\\features\\support\\step-1.js:16:10)"
+              "status": "skipped",
+              "duration": 0
             }
           }
         ],
@@ -41,11 +54,11 @@
         "type": "scenario"
       }
     ],
-    "id": "get-primary-title-in-eurostep",
+    "id": "login-in-shareaspace",
     "line": 1,
     "keyword": "Feature",
-    "name": "Get primary title in eurostep",
+    "name": "Login in ShareAspace",
     "tags": [],
-    "uri": "features\\test.feature"
+    "uri": "features\\test1.feature"
   }
 ]
