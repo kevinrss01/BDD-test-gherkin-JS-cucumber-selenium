@@ -1,8 +1,12 @@
+// I use the selenium-webdriver package to get the primary title in web page
+const getTitleInEurostep = require("./BDDtests/getTitle.js");
+
 class ClassGetTitle {
   async getTitle() {
-    // I use the selenium-webdriver package to get the primary title in web page
-    const { Builder, By, Key, until } = require("selenium-webdriver");
+    return await getTitleInEurostep();
+  }
 
+  async getTitle2() {
     // I create a new instance of the Edge driver
     let driver = await new Builder()
       .forBrowser("MicrosoftEdge", "--headless")
@@ -11,7 +15,7 @@ class ClassGetTitle {
       // I go to the web page
       await driver.get("https://eurostep.com");
       // I find the primary title
-      let headings = await driver.findElements(By.css("h1"));
+      let headings = await driver.findElements(By.css("h2"));
       if (headings.length < 1) {
         console.log("No headings found!");
       } else {
@@ -30,7 +34,7 @@ class ClassGetTitle {
   }
 }
 
-// I export the ClassGetTitle to be used in step.js
+// I export the ClassGetTitle to be used in step-1.js
 module.exports = {
   ClassGetTitle,
 };

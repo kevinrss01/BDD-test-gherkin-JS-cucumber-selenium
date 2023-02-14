@@ -11,6 +11,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "prettier": "^2.8.4",
     "selenium-webdriver": "^4.7.1"
   },
   "devDependencies": {

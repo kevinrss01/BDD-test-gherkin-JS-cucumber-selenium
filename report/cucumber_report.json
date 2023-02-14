@@ -1,1 +1,51 @@
-
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "get-primary-title-in-eurostep;title-is-in-the-page",
+        "keyword": "Scenario",
+        "line": 3,
+        "name": "Title is in the page",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 4,
+            "name": "I looking for the primary title",
+            "match": {
+              "location": "features\\support\\step-1.js:11"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2783657299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 5,
+            "name": "I should see \"Secure ollaboration for Product Lifecycle Management\"",
+            "match": {
+              "location": "features\\support\\step-1.js:15"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1236299,
+              "error_message": "AssertionError [ERR_ASSERTION]: The secondary title is not correct. \n Words found : Secure Collaboration for Product Lifecycle Management \n Words expected : Secure ollaboration for Product Lifecycle Management\n    + expected - actual\n\n    -Secure Collaboration for Product Lifecycle Management\n    +Secure ollaboration for Product Lifecycle Management\n\n    at World.<anonymous> (C:\\_DEV\\TESTS\\BDD-test-gherkin-JS-cucumber-selenium\\features\\support\\step-1.js:16:10)"
+            }
+          }
+        ],
+        "tags": [],
+        "type": "scenario"
+      }
+    ],
+    "id": "get-primary-title-in-eurostep",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Get primary title in eurostep",
+    "tags": [],
+    "uri": "features\\test.feature"
+  }
+]

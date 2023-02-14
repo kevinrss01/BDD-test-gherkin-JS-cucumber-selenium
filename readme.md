@@ -34,6 +34,8 @@ This allows for the tests to be easily maintainable and understandable by the en
 
 3. Put yourself in the folder where you want to clone the project and run the following command with your terminal or download the zip file to your local machine :
 
+   (Make sure you install the project on your machine and not on the cloud)
+
 `git clone https://github.com/kevinrss01/BDD-test-gherkin-JS-cucumber-selenium`
 
 4. Open the project in VS Code or your preferred code editor.  
@@ -45,10 +47,10 @@ This allows for the tests to be easily maintainable and understandable by the en
 
 `npm install`
 
-6. Once all dependencies have been installed, if you want to see the result in the console you can run the following command to execute the tests:
+6. Once all dependencies have been installed, you can run the test and see the results in the terminal. Run the following command
 
 `npm run test`
 
-7. If you want to see the result in the HTML report, run the following command _(You must execute npm run test first)_:
+7. If you want to see the result of the last test in the HTML report, run the following command _(You must execute npm run test first)_:
 
 `npm run report`

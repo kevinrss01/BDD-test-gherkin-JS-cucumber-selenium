@@ -279,8 +279,8 @@ pre {
           <a class="navbar-brand">Cucumberjs Report</a>
           <div class="project-name visible-md visible-lg">selenium</div>
           <div class="label-container">
-            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 0</span>
-            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 1</span>
+            <span class="label label-success" onclick="toggle('.feature-passed')" title=scenarios>Passed: 1</span>
+            <span class="label label-danger" onclick="toggle('.feature-failed')" title=scenarios>Failed: 0</span>
           </div>
         </div>
       </div>
@@ -288,7 +288,7 @@ pre {
 
     <div class="container">
 
-      <div class="generated-on">Tue Feb 07 2023 17:06:58 GMT+0100 (Central European Standard Time)</div>
+      <div class="generated-on">Tue Feb 14 2023 12:15:29 GMT+0100 (Central European Standard Time)</div>
 
       <div class="row">
         <div class="chart col-lg-6 col-md-6" id="piechart_features"></div>
@@ -303,7 +303,7 @@ pre {
 <div class="row" xmlns="http://www.w3.org/1999/html">
 
 
-<div class="feature-failed">
+<div class="feature-passed">
 
     <div class="col-lg-6 col-md-6">
         <div class="panel panel-default">
@@ -313,14 +313,14 @@ pre {
                     <div class="tags">
                     </div>
                     
-                    <a data-toggle="collapse" href="#collapseFeatureselenium6c5045ea-5ca0-4d24-b99a-5c59409d8f59">
+                    <a data-toggle="collapse" href="#collapseFeatureseleniumd14a5c96-aaed-4f39-9b22-13db6a4ce93a">
                         <i class="glyphicon glyphicon-chevron-right"></i>
                         <i class="glyphicon glyphicon-chevron-down"></i>
                         <b>Feature:</b>Get primary title in eurostep
                         <span class="label-container">
+              <span class="label label-success"
+                                                         title="1 Scenarios Passed">1</span>
               
-              <span class="label label-danger"
-                                                         title="1 Scenarios Failed">1</span>
               
               
               
@@ -329,7 +329,7 @@ pre {
                     </a>
                 </h4>
             </div>
-            <div id="collapseFeatureselenium6c5045ea-5ca0-4d24-b99a-5c59409d8f59" class="panel-collapse collapse">
+            <div id="collapseFeatureseleniumd14a5c96-aaed-4f39-9b22-13db6a4ce93a" class="panel-collapse collapse">
                 <div class="panel-body">
                     
                     
@@ -342,10 +342,10 @@ pre {
                                 <div class="tags">
                                 </div>
                                 
-                                <a data-toggle="collapse" href="#collapseScenarioselenium05900304-3aab-47f6-a00e-3a4aef977e6c">
+                                <a data-toggle="collapse" href="#collapseScenarioselenium222ed63b-e704-4388-bb65-2e389117a7a7">
                                     <div>
 
-                                        <div style="padding-right: 50px">
+                                        <div style="padding-right: 30px">
                                             <i class="glyphicon glyphicon-chevron-right"></i>
                                             <i class="glyphicon glyphicon-chevron-down"></i>
                                             <b>Scenario:</b>Title is in the page
@@ -353,12 +353,11 @@ pre {
                                         <div>
                             <span class="label-container">
                               <span class="label label-success"
-                                                               title="1 Steps Passed">1</span>
+                                                               title="2 Steps Passed">2</span>
                               
                               
                               
-                              <span class="label label-danger"
-                                                               title="1 Steps Failed">1</span>
+                              
                               
                             </span>
                                         </div>
@@ -367,7 +366,7 @@ pre {
                                 </a>
                             </h4>
                         </div>
-                        <div id="collapseScenarioselenium05900304-3aab-47f6-a00e-3a4aef977e6c"
+                        <div id="collapseScenarioselenium222ed63b-e704-4388-bb65-2e389117a7a7"
                              class="panel-collapse collapse">
                             <div class="panel-body">
                                 <div></div>
@@ -388,7 +387,7 @@ pre {
                             
                           
                               <span class="step-duration">
-                               2s 709ms
+                               2s 893ms
                               </span>
                             
                          
@@ -416,17 +415,17 @@ pre {
                                 <div class="row steps">
                                     
                                     
-                                    <span class="label label-danger" title="Failed"><i
-                                            class="glyphicon glyphicon-remove"></i></span>
+                                    <span class="label label-success" title="Success"><i
+                                            class="glyphicon glyphicon-ok"></i></span>
                                     
                                     
                                     <span class="text">
                         <span class="keyword highlight">Then </span>
-                          <span> I should see &quot;Secure Colaboration for Product Lifecycle Management&quot;</span>
+                          <span> I should see &quot;Secure Collaboration for Product Lifecycle Management&quot;</span>
                             
                           
                               <span class="step-duration">
-                               1ms
+                               < 1ms
                               </span>
                             
                          
@@ -437,58 +436,6 @@ pre {
                       </span>
                                 
                                 
-
-                                    
-                                    <a href="#error0_01"
-                                       data-toggle="collapse" class="toggle">Show Error +</a>
-                                    <div id="error0_01"
-                                         class="collapse">
-                                        <pre class="info show-modal"
-                                             data-toggle="modal"
-                                             style="cursor: pointer"
-                                             data-target="#error-modal-0_01">
-                                            <br> AssertionError [ERR_ASSERTION]: The secondary title is not correct
-    + expected - actual
-
-    -Secure Collaboration for Product Lifecycle Management
-    +Secure Colaboration for Product Lifecycle Management
-
-    at World.(anonymous) (C:\_DEV\TESTS\BDD-test-gherkin-JS-cucumber-selenium\features\support\step.js:20:10)</pre>
-                                    </div>
-
-                                <div class="modal fade" id="error-modal-0_01" tabindex="-1" role="dialog"
-                                     aria-labelledby="stacktraceModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog modal-lg">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close"><span aria-hidden="true">&times;</span>
-                                                </button>
-                                                <h4 class="modal-title" id="error-modal-title">
-                                                    Error
-                                                </h4>
-                                            </div>
-                                            <div class="modal-body">
-                                                <h5>
-                                                    <pre><br>AssertionError [ERR_ASSERTION]: The secondary title is not correct
-    + expected - actual
-
-    -Secure Collaboration for Product Lifecycle Management
-    +Secure Colaboration for Product Lifecycle Management
-
-    at World.(anonymous) (C:\_DEV\TESTS\BDD-test-gherkin-JS-cucumber-selenium\features\support\step.js:20:10)</pre>
-                                                </h5>
-                                            </div>
-
-                                            <div class="modal-footer">
-                                                <button type="button" class="btn btn-default" data-dismiss="modal">
-                                                    Close
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
 
                                     
 
@@ -538,8 +485,8 @@ pre {
         google.load("visualization", "1", {packages: ["corechart"]});
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Features",
-                                                            "failed" : 1,
-                                                            "passed" : 0,
+                                                            "failed" : 0,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
@@ -548,8 +495,8 @@ pre {
                                             });
         google.setOnLoadCallback(function() {drawChart({
                                                             "title" : "Scenarios",
-                                                            "failed" : 1,
-                                                            "passed" : 0,
+                                                            "failed" : 0,
+                                                            "passed" : 1,
                                                             "notdefined" : 0,
                                                             "pending" : 0,
                                                             "skipped" : 0,
