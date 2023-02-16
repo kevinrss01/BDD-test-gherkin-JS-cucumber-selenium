@@ -14,38 +14,18 @@
             "keyword": "When ",
             "line": 4,
             "name": "I enter my login credentials and click on enter",
-            "match": {
-              "location": "features\\support\\step-1.js:8"
-            },
             "result": {
-              "status": "passed",
-              "duration": 20821623899
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 5,
-            "name": "I am redirected to the ShareAspace home page",
-            "match": {
-              "location": "features\\support\\step-1.js:12"
-            },
-            "result": {
-              "status": "failed",
-              "duration": 444200,
-              "error_message": "TypeError: Cannot read properties of null (reading 'wait')\n    at ClassBDDtests.verifyHomePage (C:\\_DEV\\TESTS\\BDD-test-gherkin-JS-cucumber-selenium\\index.js:44:23)\n    at World.<anonymous> (C:\\_DEV\\TESTS\\BDD-test-gherkin-JS-cucumber-selenium\\features\\support\\step-1.js:13:31)"
+              "status": "undefined",
+              "duration": 0
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 6,
-            "name": "I should see \"Spaces\"",
-            "match": {
-              "location": "features\\support\\step-1.js:16"
-            },
+            "line": 5,
+            "name": "I am redirected to the ShareAspace home page",
             "result": {
-              "status": "skipped",
+              "status": "undefined",
               "duration": 0
             }
           }

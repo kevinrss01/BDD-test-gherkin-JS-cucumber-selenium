@@ -22,6 +22,10 @@ Cucumber.js is a JavaScript implementation of the Cucumber testing framework. It
 Cucumber.js works by matching the test scenarios written in Gherkin with JavaScript code that implements those scenarios.  
 This allows for the tests to be easily maintainable and understandable by the entire team, including stakeholders and business representatives. Additionally, cucumber.js integrates well with other testing tools, making it a popular choice for Behavior Driven Development (BDD) in JavaScript projects.
 
+## What the project does ?
+
+This project is a simple test that allows you to validate the login functionality of the website ShareAspace.
+
 ## Installation and test execution
 
 ### Installation
@@ -49,7 +53,7 @@ This allows for the tests to be easily maintainable and understandable by the en
 
 6. Once all dependencies have been installed, you can run the test and see the results in the terminal. Run the following command
 
-`npm run test`
+`npm run test`, you have to enter your email and password in the console to run the test and test the login functionality.
 
 7. If you want to see the result of the last test in the HTML report, run the following command _(You must execute npm run test first)_:
 
